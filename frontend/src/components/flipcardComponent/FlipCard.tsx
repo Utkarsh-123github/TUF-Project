@@ -5,12 +5,11 @@ import { useState } from "react"
 interface Card {
     "question" : string;
     "answer" : string;
-    "id" : string;
+    "id" ?: string;
 }
 export const FlipCard = ({
     question,
     answer,
-    id
 }:Card)=>{
     const [isFlipped,setIsFlipped] = useState(false)
     function flipCard(){

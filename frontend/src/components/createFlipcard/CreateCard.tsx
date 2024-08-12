@@ -26,6 +26,7 @@ export const CreateCard = ()=>{
                 }
             })
             const cardId = response.data.id;
+            console.log(cardId)
             navigate('/cards')
         } catch(e){
             //alert user 
